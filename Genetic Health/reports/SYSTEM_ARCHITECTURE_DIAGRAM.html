@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture - Genetic Health</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #EDEDED;
+            min-height: 100vh;
+            letter-spacing: -0.01em;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: center center;
+            overflow-x: hidden;
+        }
+
+        .code-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .panel {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 6px;
+            transition: all 0.4s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .panel:hover {
+            border-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 30px -10px rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+            z-index: 20;
+        }
+
+        .inner-box {
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 10;
+        }
+
+        .inner-box:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.8);
+            transform: scale(1.02);
+            z-index: 20;
+        }
+
+        .step-marker {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+            z-index: 10;
+            position: relative;
+            margin: 0 auto 16px auto;
+            transition: all 0.4s ease;
+        }
+
+        .sec-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #888;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        /* CSS Animated Arrows */
+        @keyframes dash-move {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 8px 0;
+            }
+        }
+
+        @keyframes dash-move-y {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 0 8px;
+            }
+        }
+
+        /* Journey Horizontal Arrows */
+        .journey-flow {
+            position: absolute;
+            top: 4px;
+            left: calc(50% + 16px);
+            width: calc(100% - 8px);
+            /* 100% + 24px gap - 32px total side gaps */
+            height: 1px;
+            background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 50%, transparent 50%);
+            background-size: 8px 1px;
+            z-index: 0;
+            animation: dash-move 0.8s linear infinite;
+        }
+
+        .journey-flow::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: -4px;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 5px solid rgba(255, 255, 255, 0.4);
+        }
+
+        /* Panel-to-Panel Horizontal Arrows */
+        .panel-flow {
+            position: absolute;
+            top: 50%;
+            right: -24px;
+            width: 24px;
+            height: 1px;
+            background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 50%, transparent 50%);
+            background-size: 8px 1px;
+            transform: translateY(-50%);
+            z-index: 0;
+            animation: dash-move 0.8s linear infinite;
+        }
+
+        .panel-flow::after {
+            content: '';
+            position: absolute;
+            right: -2px;
+            top: -4px;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 5px solid rgba(255, 255, 255, 0.4);
+        }
+
+        /* Vertical Intra-Panel Arrows */
+        .vertical-flow {
+            margin: 4px auto;
+            width: 1px;
+            height: 24px;
+            background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 50%, transparent 50%);
+            background-size: 1px 8px;
+            position: relative;
+            animation: dash-move-y 0.8s linear infinite;
+        }
+
+        .vertical-flow::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: -3.5px;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 5px solid rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+
+<body class="p-6 md:p-12 lg:p-20">
+
+    <!-- Header -->
+    <header class="max-w-7xl mx-auto mb-20 relative">
+        <div class="flex items-center gap-4 mb-6">
+            <div class="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></div>
+            <div class="text-[11px] uppercase tracking-[0.2em] text-gray-400 font-medium">System Architecture Diagram
+            </div>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-light tracking-tight text-white mb-6">
+            Elesium
+        </h1>
+        <p class="text-gray-400 text-sm md:text-base max-w-2xl font-light leading-relaxed">
+            A technical breakdown of how we turn raw data into smart clinical protocols using AI.
+        </p>
+    </header>
+
+    <div class="max-w-7xl mx-auto relative">
+
+        <!-- User Journey -->
+        <div class="relative mb-16 pt-4">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-6 relative z-10">
+
+                <!-- Step 1 -->
+                <div class="text-center group relative">
+                    <div class="step-marker group-hover:scale-[2]"></div>
+                    <h3 class="text-[12px] font-medium text-white tracking-[0.1em] uppercase mb-2">01. Ingestion</h3>
+                    <p class="text-[11px] text-gray-500 font-light max-w-[180px] mx-auto leading-relaxed">Raw 23andMe /
+                        Ancestry data upload</p>
+                    <div class="hidden lg:block journey-flow"></div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center group relative">
+                    <div class="step-marker group-hover:scale-[2]"></div>
+                    <h3 class="text-[12px] font-medium text-white tracking-[0.1em] uppercase mb-2">02. Processing</h3>
+                    <p class="text-[11px] text-gray-500 font-light max-w-[180px] mx-auto leading-relaxed">Statistical
+                        risk analysis execution</p>
+                    <div class="hidden lg:block journey-flow"></div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center group relative">
+                    <div class="step-marker group-hover:scale-[2]"></div>
+                    <h3 class="text-[12px] font-medium text-white tracking-[0.1em] uppercase mb-2">03. Synthesis</h3>
+                    <p class="text-[11px] text-gray-500 font-light max-w-[180px] mx-auto leading-relaxed">AI clinical
+                        protocol generation</p>
+                    <div class="hidden lg:block journey-flow"></div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center group">
+                    <div class="step-marker group-hover:scale-[2]"></div>
+                    <h3 class="text-[12px] font-medium text-white tracking-[0.1em] uppercase mb-2">04. Delivery</h3>
+                    <p class="text-[11px] text-gray-500 font-light max-w-[180px] mx-auto leading-relaxed">Actionable
+                        lifestyle optimization</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Architecture Columns -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-12">
+
+            <!-- Col 1 -->
+            <div class="panel p-6 lg:p-8">
+                <!-- perfectly centered gap arrow -->
+                <div class="hidden lg:block panel-flow"></div>
+
+                <div class="sec-label">Interaction Layer</div>
+                <div class="flex-1 flex flex-col justify-center">
+                    <div class="inner-box p-4">
+                        <div class="text-[13px] text-white font-medium mb-1">Client Dashboard</div>
+                        <div class="text-[10px] text-gray-400">React / Next.js</div>
+                    </div>
+
+                    <div class="vertical-flow"></div>
+
+                    <div class="inner-box p-4">
+                        <div class="text-[13px] text-white font-medium mb-1">API Gateway</div>
+                        <div class="text-[10px] text-gray-400">Upload controller & auth</div>
+                    </div>
+
+                    <div class="vertical-flow"></div>
+
+                    <div class="inner-box p-4">
+                        <div class="text-[13px] text-white font-medium mb-1">Genome Parser</div>
+                        <div class="text-[10px] text-gray-400">Data normalization</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Col 2 -->
+            <div class="panel p-6 lg:p-8">
+                <div class="hidden lg:block panel-flow"></div>
+
+                <div class="sec-label">Analysis Engine</div>
+                <div class="flex-1 flex flex-col justify-center">
+                    <div class="inner-box p-4">
+                        <div class="text-[13px] text-white font-medium mb-1 flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></div> Background Queue
+                        </div>
+                        <div class="text-[10px] text-gray-400">Async task management</div>
+                    </div>
+
+                    <div class="vertical-flow"></div>
+
+                    <div class="inner-box p-4">
+                        <div class="text-[13px] text-white font-medium mb-2">SNP Matching</div>
+                        <div class="code-font text-[9px] text-gray-400 tracking-tight">comprehensive_snp_database.py
+                        </div>
+                    </div>
+
+                    <div class="vertical-flow"></div>
+
+                    <div class="inner-box p-4">
+                        <div class="text-[13px] text-white font-medium mb-2">Risk Analyzer</div>
+                        <div class="code-font text-[9px] text-gray-400 tracking-tight">disease_risk_analyzer.py</div>
+                    </div>
+
+                    <div class="vertical-flow"></div>
+
+                    <div class="inner-box p-4">
+                        <div class="text-[13px] text-white font-medium mb-2">Trait Analysis</div>
+                        <div class="code-font text-[9px] text-gray-400 tracking-tight">analyze_genome.py</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Col 3 -->
+            <div class="panel p-6 lg:p-8">
+                <div class="hidden lg:block panel-flow"></div>
+
+                <div class="sec-label">AI Layer</div>
+                <div class="flex-1 flex flex-col justify-center">
+                    <div class="inner-box p-4">
+                        <div class="text-[13px] text-white font-medium mb-2">Exhaustive Report</div>
+                        <div class="code-font text-[9px] text-gray-400 tracking-tight">generate_exhaustive_report.py
+                        </div>
+                    </div>
+
+                    <div class="vertical-flow"></div>
+
+                    <div class="inner-box p-4">
+                        <div class="text-[13px] text-white font-medium mb-2">Executive Summary</div>
+                        <div class="code-font text-[9px] text-gray-400 tracking-tight">generate_executive_synthesis.py
+                        </div>
+                    </div>
+
+                    <div class="vertical-flow"></div>
+
+                    <div class="inner-box p-5">
+                        <div class="text-[13px] text-white font-bold mb-2">LLM Protocol Rewrite</div>
+                        <div class="code-font text-[9px] text-gray-300 tracking-tight">rewrite_protocol.py</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Col 4 -->
+            <div class="panel p-6 lg:p-8">
+                <div class="sec-label text-white">Output & Delivery</div>
+                <div class="flex-1 flex flex-col justify-center">
+                    <div class="inner-box p-6 border-white/60 shadow-[0_0_15px_rgba(255,255,255,0.05)]">
+                        <div class="text-[14px] text-white font-bold mb-2">Actionable Protocol</div>
+                        <div class="text-[10px] text-gray-300 leading-relaxed">Jargon-free clinical markdown rendered
+                            directly in UI.</div>
+                    </div>
+
+                    <div class="vertical-flow"></div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="inner-box p-4 flex flex-col items-center justify-center text-center">
+                            <div class="text-[12px] text-white font-medium mb-1">Nudges</div>
+                            <div class="text-[9px] text-gray-400">Supplements</div>
+                        </div>
+                        <div class="inner-box p-4 flex flex-col items-center justify-center text-center">
+                            <div class="text-[12px] text-white font-medium mb-1">Export</div>
+                            <div class="text-[9px] text-gray-400">Practitioner PDF</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Base Infrastructure -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 relative z-10">
+
+            <!-- Storage -->
+            <div class="panel p-6 lg:p-8 lg:col-span-8">
+                <div class="sec-label">Storage & Databases</div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="inner-box p-4 text-center">
+                        <div class="text-[11px] text-white font-medium mb-1">User Auth DB</div>
+                        <div class="text-[9px] text-gray-400">PostgreSQL</div>
+                    </div>
+                    <div class="inner-box p-4 text-center">
+                        <div class="text-[11px] text-white font-medium mb-1">Raw Genomes</div>
+                        <div class="text-[9px] text-gray-400">Secure Vault</div>
+                    </div>
+                    <div class="inner-box p-4 text-center">
+                        <div class="text-[11px] text-white font-medium mb-1">SNP Knowledge</div>
+                        <div class="text-[9px] text-gray-400">Internal Map</div>
+                    </div>
+                    <div class="inner-box p-4 text-center border-white/40">
+                        <div class="text-[11px] text-white font-medium mb-1">Generated Reports</div>
+                        <div class="text-[9px] text-gray-400">Document Store</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- External APIs -->
+            <div class="panel p-6 lg:p-8 lg:col-span-4">
+                <div class="sec-label">External Services</div>
+                <div class="space-y-4">
+                    <div
+                        class="flex items-center justify-between border-b border-white/20 pb-3 hover:border-white/80 transition-colors">
+                        <div class="text-[12px] text-white font-medium">OpenRouter LLM</div>
+                        <div
+                            class="text-[8px] uppercase tracking-wider text-gray-400 border border-white/30 px-2 py-1 rounded">
+                            Synthesis</div>
+                    </div>
+                    <div
+                        class="flex items-center justify-between border-b border-white/20 pb-3 hover:border-white/80 transition-colors">
+                        <div class="text-[12px] text-white font-medium">Stripe</div>
+                        <div
+                            class="text-[8px] uppercase tracking-wider text-gray-400 border border-white/30 px-2 py-1 rounded">
+                            Payments</div>
+                    </div>
+                    <div class="flex items-center justify-between pb-1 hover:text-white transition-colors">
+                        <div class="text-[12px] text-white font-medium">Resend</div>
+                        <div
+                            class="text-[8px] uppercase tracking-wider text-gray-400 border border-white/30 px-2 py-1 rounded">
+                            Email</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

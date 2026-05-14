@@ -1,0 +1,1032 @@
+{
+  "findings": [
+    {
+      "rsid": "rs1800460",
+      "gene": "TPMT",
+      "category": "Drug Metabolism",
+      "genotype": "CT",
+      "status": "intermediate",
+      "description": "Intermediate TPMT - thiopurine dose reduction needed",
+      "magnitude": 4,
+      "note": ""
+    },
+    {
+      "rsid": "rs1799853",
+      "gene": "CYP2C9",
+      "category": "Drug Metabolism",
+      "genotype": "CT",
+      "status": "intermediate",
+      "description": "Intermediate CYP2C9 (*2) - warfarin dose reduction needed",
+      "magnitude": 3,
+      "note": ""
+    },
+    {
+      "rsid": "rs4149056",
+      "gene": "SLCO1B1",
+      "category": "Drug Metabolism",
+      "genotype": "CT",
+      "status": "intermediate",
+      "description": "Intermediate statin transporter - 4x myopathy risk with simvastatin",
+      "magnitude": 3,
+      "note": ""
+    },
+    {
+      "rsid": "rs1801133",
+      "gene": "MTHFR",
+      "category": "Methylation",
+      "genotype": "AA",
+      "status": "significantly_reduced",
+      "description": "MTHFR C677T homozygous - ~70% reduced activity, methylfolate recommended over folic acid",
+      "magnitude": 3,
+      "note": ""
+    },
+    {
+      "rsid": "rs4680",
+      "gene": "COMT",
+      "category": "Neurotransmitters",
+      "genotype": "AA",
+      "status": "slow",
+      "description": "Slow COMT (Met/Met) - higher dopamine, better working memory but more stress-sensitive, stimulants hit harder",
+      "magnitude": 3,
+      "note": ""
+    },
+    {
+      "rsid": "rs1799971",
+      "gene": "OPRM1",
+      "category": "Neurotransmitters",
+      "genotype": "GG",
+      "status": "significantly_altered",
+      "description": "OPRM1 G/G - reduced opioid sensitivity, may need higher doses for pain, altered alcohol reward",
+      "magnitude": 3,
+      "note": ""
+    },
+    {
+      "rsid": "rs429358",
+      "gene": "APOE",
+      "category": "Cardiovascular",
+      "genotype": "CT",
+      "status": "e4_carrier",
+      "description": "APOE e4 carrier (one copy) - increased CVD and Alzheimer's risk",
+      "magnitude": 3,
+      "note": "Combine with rs7412 for APOE type"
+    },
+    {
+      "rsid": "rs1801394",
+      "gene": "MTRR",
+      "category": "Methylation",
+      "genotype": "GG",
+      "status": "significantly_reduced",
+      "description": "MTRR A66G homozygous - impaired B12 recycling, consider methylcobalamin",
+      "magnitude": 2,
+      "note": ""
+    },
+    {
+      "rsid": "rs7946",
+      "gene": "PEMT",
+      "category": "Methylation",
+      "genotype": "TT",
+      "status": "significantly_reduced",
+      "description": "PEMT G5765A homozygous - higher choline requirements, especially for women",
+      "magnitude": 2,
+      "note": ""
+    },
+    {
+      "rsid": "rs7903146",
+      "gene": "TCF7L2",
+      "category": "Nutrition",
+      "genotype": "CT",
+      "status": "increased",
+      "description": "TCF7L2 risk allele heterozygous - 1.4x T2D risk, carb restriction helpful",
+      "magnitude": 2,
+      "note": ""
+    },
+    {
+      "rsid": "rs2282679",
+      "gene": "GC",
+      "category": "Nutrition",
+      "genotype": "TT",
+      "status": "low",
+      "description": "GC T/T - genetically low vitamin D, supplementation often needed especially in northern latitudes",
+      "magnitude": 2,
+      "note": ""
+    },
+    {
+      "rsid": "rs5186",
+      "gene": "AGTR1",
+      "category": "Cardiovascular",
+      "genotype": "AC",
+      "status": "increased",
+      "description": "AGTR1 A1166C heterozygous - increased hypertension risk",
+      "magnitude": 2,
+      "note": ""
+    },
+    {
+      "rsid": "rs4343",
+      "gene": "ACE",
+      "category": "Cardiovascular",
+      "genotype": "GG",
+      "status": "high",
+      "description": "Higher ACE activity - power advantage but higher BP risk, responds well to ACE inhibitors",
+      "magnitude": 2,
+      "note": ""
+    },
+    {
+      "rsid": "rs1800629",
+      "gene": "TNF",
+      "category": "Inflammation",
+      "genotype": "AG",
+      "status": "increased",
+      "description": "TNF-308 G>A heterozygous - higher TNF-alpha, increased inflammation",
+      "magnitude": 2,
+      "note": ""
+    },
+    {
+      "rsid": "rs1800795",
+      "gene": "IL6",
+      "category": "Inflammation",
+      "genotype": "GG",
+      "status": "high",
+      "description": "IL-6 -174 G/G - higher baseline IL-6, more inflammatory response",
+      "magnitude": 2,
+      "note": ""
+    },
+    {
+      "rsid": "rs2187668",
+      "gene": "HLA-DQA1",
+      "category": "Autoimmune",
+      "genotype": "CT",
+      "status": "increased_risk",
+      "description": "HLA-DQ2.5 carrier - increased celiac disease risk",
+      "magnitude": 2,
+      "note": ""
+    },
+    {
+      "rsid": "rs2228479",
+      "gene": "MC1R",
+      "category": "Skin",
+      "genotype": "GG",
+      "status": "accelerated",
+      "description": "MC1R V92M homozygous - may show accelerated skin aging",
+      "magnitude": 2,
+      "note": ""
+    },
+    {
+      "rsid": "rs762551",
+      "gene": "CYP1A2",
+      "category": "Drug Metabolism",
+      "genotype": "AA",
+      "status": "fast",
+      "description": "Fast caffeine metabolizer - clears caffeine quickly, lower cardiovascular risk from coffee",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs776746",
+      "gene": "CYP3A5",
+      "category": "Drug Metabolism",
+      "genotype": "CC",
+      "status": "non_expressor",
+      "description": "CYP3A5 non-expressor (*3/*3) - standard tacrolimus dosing",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs1805087",
+      "gene": "MTR",
+      "category": "Methylation",
+      "genotype": "AG",
+      "status": "reduced",
+      "description": "MTR A2756G heterozygous - reduced B12 utilization",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs1801280",
+      "gene": "NAT2",
+      "category": "Detoxification",
+      "genotype": "CT",
+      "status": "intermediate",
+      "description": "Intermediate NAT2 acetylator",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs1799930",
+      "gene": "NAT2",
+      "category": "Detoxification",
+      "genotype": "AG",
+      "status": "intermediate",
+      "description": "Intermediate acetylator",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs4880",
+      "gene": "SOD2",
+      "category": "Detoxification",
+      "genotype": "AA",
+      "status": "high_activity",
+      "description": "High SOD2 activity (Ala/Ala) - efficient mitochondrial antioxidant",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs4633",
+      "gene": "COMT",
+      "category": "Neurotransmitters",
+      "genotype": "TT",
+      "status": "slow",
+      "description": "Slow COMT haplotype marker",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs2298383",
+      "gene": "ADORA2A",
+      "category": "Caffeine Response",
+      "genotype": "CT",
+      "status": "intermediate",
+      "description": "Intermediate caffeine-anxiety response",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs12649507",
+      "gene": "ARNTL",
+      "category": "Sleep/Circadian",
+      "genotype": "AG",
+      "status": "altered",
+      "description": "BMAL1 variant - may affect circadian amplitude",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs1815739",
+      "gene": "ACTN3",
+      "category": "Fitness",
+      "genotype": "CT",
+      "status": "mixed",
+      "description": "ACTN3 R/X (mixed) - balanced muscle fiber composition",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs1042713",
+      "gene": "ADRB2",
+      "category": "Fitness",
+      "genotype": "AA",
+      "status": "arg16",
+      "description": "ADRB2 Arg16 - reduced exercise-induced lipolysis",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs8192678",
+      "gene": "PPARGC1A",
+      "category": "Fitness",
+      "genotype": "CT",
+      "status": "enhanced",
+      "description": "PPARGC1A Gly482Ser heterozygous - may have enhanced endurance adaptation",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs5082",
+      "gene": "APOA2",
+      "category": "Nutrition",
+      "genotype": "AG",
+      "status": "intermediate",
+      "description": "APOA2 -265T>C heterozygous - intermediate sat fat sensitivity",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs174547",
+      "gene": "FADS1",
+      "category": "Nutrition",
+      "genotype": "TT",
+      "status": "high_conversion",
+      "description": "FADS1 T/T - efficient omega-3/6 conversion, plant sources adequate",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs699",
+      "gene": "AGT",
+      "category": "Cardiovascular",
+      "genotype": "AG",
+      "status": "increased",
+      "description": "AGT M235T heterozygous - ~20% higher AGT, slightly elevated BP risk",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs1801253",
+      "gene": "ADRB1",
+      "category": "Cardiovascular",
+      "genotype": "CC",
+      "status": "arg389",
+      "description": "ADRB1 Arg389 - enhanced beta-blocker response",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs1799945",
+      "gene": "HFE",
+      "category": "Iron Metabolism",
+      "genotype": "CG",
+      "status": "carrier",
+      "description": "HFE H63D carrier - mild iron accumulation possible",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs12203592",
+      "gene": "IRF4",
+      "category": "Skin",
+      "genotype": "CT",
+      "status": "lighter",
+      "description": "IRF4 variant - tendency toward lighter skin, increased sun sensitivity",
+      "magnitude": 1,
+      "note": ""
+    },
+    {
+      "rsid": "rs4244285",
+      "gene": "CYP2C19",
+      "category": "Drug Metabolism",
+      "genotype": "GG",
+      "status": "normal",
+      "description": "Normal CYP2C19 - standard drug metabolism",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs12248560",
+      "gene": "CYP2C19",
+      "category": "Drug Metabolism",
+      "genotype": "CC",
+      "status": "normal",
+      "description": "Normal CYP2C19 metabolism",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs1057910",
+      "gene": "CYP2C9",
+      "category": "Drug Metabolism",
+      "genotype": "AA",
+      "status": "normal",
+      "description": "Normal CYP2C9 function",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs3918290",
+      "gene": "DPYD",
+      "category": "Drug Metabolism",
+      "genotype": "CC",
+      "status": "normal",
+      "description": "Normal DPYD - standard fluoropyrimidine tolerance",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs2395029",
+      "gene": "HLA-B",
+      "category": "Drug Metabolism",
+      "genotype": "TT",
+      "status": "normal",
+      "description": "Low abacavir hypersensitivity risk",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs1801131",
+      "gene": "MTHFR",
+      "category": "Methylation",
+      "genotype": "TT",
+      "status": "normal",
+      "description": "Normal MTHFR A1298 function (23andMe orientation)",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs234706",
+      "gene": "CBS",
+      "category": "Methylation",
+      "genotype": "GG",
+      "status": "normal",
+      "description": "Normal CBS function - standard homocysteine processing",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs1695",
+      "gene": "GSTP1",
+      "category": "Detoxification",
+      "genotype": "AA",
+      "status": "normal",
+      "description": "Normal GSTP1 - good glutathione conjugation",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs1138272",
+      "gene": "GSTP1",
+      "category": "Detoxification",
+      "genotype": "CC",
+      "status": "normal",
+      "description": "Normal GSTP1 Ala114 function",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs6265",
+      "gene": "BDNF",
+      "category": "Neurotransmitters",
+      "genotype": "CC",
+      "status": "normal",
+      "description": "Normal BDNF Val66 - standard neuroplasticity and memory",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs5751876",
+      "gene": "ADORA2A",
+      "category": "Caffeine Response",
+      "genotype": "CT",
+      "status": "normal",
+      "description": "Normal caffeine sensitivity",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs73598374",
+      "gene": "ADA",
+      "category": "Caffeine Response",
+      "genotype": "CC",
+      "status": "normal",
+      "description": "Normal adenosine deaminase - standard sleep pressure",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs9939609",
+      "gene": "FTO",
+      "category": "Nutrition",
+      "genotype": "TT",
+      "status": "normal",
+      "description": "Normal FTO - standard obesity risk",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs1801282",
+      "gene": "PPARG",
+      "category": "Nutrition",
+      "genotype": "CC",
+      "status": "normal",
+      "description": "Normal PPAR-gamma - standard insulin sensitivity",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs4988235",
+      "gene": "MCM6/LCT",
+      "category": "Nutrition",
+      "genotype": "AG",
+      "status": "tolerant",
+      "description": "Lactase persistence heterozygous - likely lactose tolerant",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs12934922",
+      "gene": "BCMO1",
+      "category": "Nutrition",
+      "genotype": "AA",
+      "status": "normal",
+      "description": "Normal beta-carotene conversion to vitamin A",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs602662",
+      "gene": "FUT2",
+      "category": "Nutrition",
+      "genotype": "AG",
+      "status": "secretor",
+      "description": "Secretor heterozygous - normal B12 absorption",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs7412",
+      "gene": "APOE",
+      "category": "Cardiovascular",
+      "genotype": "CC",
+      "status": "e3_or_e4",
+      "description": "Not APOE e2 at this position",
+      "magnitude": 0,
+      "note": "Combine with rs429358 for APOE type"
+    },
+    {
+      "rsid": "rs6025",
+      "gene": "F5",
+      "category": "Cardiovascular",
+      "genotype": "CC",
+      "status": "normal",
+      "description": "No Factor V Leiden - normal clotting",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs5443",
+      "gene": "GNB3",
+      "category": "Cardiovascular",
+      "genotype": "CC",
+      "status": "normal",
+      "description": "Normal G-protein signaling",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs1800562",
+      "gene": "HFE",
+      "category": "Iron Metabolism",
+      "genotype": "GG",
+      "status": "normal",
+      "description": "No C282Y HFE mutation - normal iron regulation",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs7574865",
+      "gene": "STAT4",
+      "category": "Autoimmune",
+      "genotype": "GG",
+      "status": "normal",
+      "description": "Normal autoimmune risk at this locus",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs2476601",
+      "gene": "PTPN22",
+      "category": "Autoimmune",
+      "genotype": "GG",
+      "status": "normal",
+      "description": "Normal autoimmune risk",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs1805007",
+      "gene": "MC1R",
+      "category": "Skin",
+      "genotype": "CC",
+      "status": "normal",
+      "description": "Normal MC1R - standard sun sensitivity",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs1805008",
+      "gene": "MC1R",
+      "category": "Skin",
+      "genotype": "CC",
+      "status": "normal",
+      "description": "Normal MC1R R160W",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs2802292",
+      "gene": "FOXO3",
+      "category": "Longevity",
+      "genotype": "TT",
+      "status": "normal",
+      "description": "Normal FOXO3 - standard longevity",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs1042522",
+      "gene": "TP53",
+      "category": "Longevity",
+      "genotype": "CG",
+      "status": "heterozygous",
+      "description": "TP53 Pro72Arg heterozygous - balanced",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs2542052",
+      "gene": "CETP",
+      "category": "Longevity",
+      "genotype": "CC",
+      "status": "normal",
+      "description": "Normal CETP activity - standard HDL metabolism",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs28929474",
+      "gene": "SERPINA1",
+      "category": "Respiratory",
+      "genotype": "CC",
+      "status": "normal",
+      "description": "Normal alpha-1 antitrypsin",
+      "magnitude": 0,
+      "note": ""
+    },
+    {
+      "rsid": "rs671",
+      "gene": "ALDH2",
+      "category": "Alcohol",
+      "genotype": "GG",
+      "status": "normal",
+      "description": "Normal ALDH2 - efficient alcohol metabolism",
+      "magnitude": 0,
+      "note": ""
+    }
+  ],
+  "pharmgkb_findings": [
+    {
+      "rsid": "rs9923231",
+      "gene": "VKORC1",
+      "drugs": "warfarin",
+      "genotype": "CC",
+      "annotation": "Patients with the CC genotype may have a decreased risk of adverse events (bleeding, over-anticoagulation or increased time above therapeutic range) when treated with phenprocoumon as compared to patients with the TT or CT genotype. Other clinical and genetic factors may also influence risk of adverse events to phenprocoumon.",
+      "level": "1A",
+      "category": "Dosage"
+    },
+    {
+      "rsid": "rs3745274",
+      "gene": "CYP2B6",
+      "drugs": "efavirenz",
+      "genotype": "GG",
+      "annotation": "The current evidence base suggests that there is no significant association between the rs3745274 GG genotype and risk of drug toxicity in patients with lupus nephritis being treated with cyclophosphamide. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence risk of drug toxicity when treated with cyclophosphamide.",
+      "level": "1A",
+      "category": "Toxicity"
+    },
+    {
+      "rsid": "rs2297595",
+      "gene": "DPYD",
+      "drugs": "fluorouracil",
+      "genotype": "TT",
+      "annotation": "Both variants of rs2297595 are assigned normal function by CPIC. Patients with the TT genotype and cancer who are treated with capecitabine, a fluoropyrimidine-based chemotherapy, may not have altered risk of drug toxicity as compared to patients with the CT or CC genotype. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence risk of drug toxicity.",
+      "level": "1A",
+      "category": "Toxicity"
+    },
+    {
+      "rsid": "rs1801265",
+      "gene": "DPYD",
+      "drugs": "fluorouracil",
+      "genotype": "AA",
+      "annotation": "Both variants of rs1801265 are assigned normal function by CPIC. Patients with the AA genotype and cancer who are treated with capecitabine, a fluoropyrimidine-based chemotherapy, may not have altered risk of drug toxicity as compared to patients with the AG or GG genotype. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence risk of drug toxicity.",
+      "level": "1A",
+      "category": "Toxicity"
+    },
+    {
+      "rsid": "rs1801160",
+      "gene": "DPYD",
+      "drugs": "fluorouracil",
+      "genotype": "CC",
+      "annotation": "Both variants of rs1801160 are assigned normal function by CPIC. Patients with the CC genotype may have increased DPYD activity as compared to patients with the CT or TT genotype. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence catalytic activity of DPYD.",
+      "level": "1A",
+      "category": "Toxicity"
+    },
+    {
+      "rsid": "rs1801158",
+      "gene": "DPYD",
+      "drugs": "capecitabine",
+      "genotype": "CC",
+      "annotation": "Both variants of rs1801158 are assigned normal function by CPIC. Patients with the CC genotype and cancer who are treated with fluorouracil, a fluoropyrimidine-based chemotherapy, may not have altered risk of drug toxicity as compared to patients with the CT or TT genotype. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence risk of drug toxicity.",
+      "level": "1A",
+      "category": "Toxicity"
+    },
+    {
+      "rsid": "rs17376848",
+      "gene": "DPYD",
+      "drugs": "capecitabine",
+      "genotype": "AA",
+      "annotation": "Both variants of rs17376848 are assigned normal function by CPIC. Patients with the AA genotype and cancer who are treated with fluorouracil, a fluoropyrimidine-based chemotherapy, may not have altered risk of drug toxicity as compared to patients with the AG or GG genotype. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence risk of drug toxicity.",
+      "level": "1A",
+      "category": "Toxicity"
+    },
+    {
+      "rsid": "rs12979860",
+      "gene": "IFNL3;IFNL4",
+      "drugs": "boceprevir;peginterferon alfa-2a;peginterferon alfa-2b;ribavirin",
+      "genotype": "CT",
+      "annotation": "Patients with the CT genotype may have decreased response to deleobuvir and faldaprevir in people with Hepatitis C genotype 1 as compared to patients with genotype CC. Other genetic and clinical factors may also influence the response to deleobuvir and faldaprevir.",
+      "level": "1A",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs12777823",
+      "gene": "",
+      "drugs": "warfarin",
+      "genotype": "GG",
+      "annotation": "Patients with the rs12777823 GG genotype may require a higher dose of warfarin in African Americans as compared to patients with the AA or AG genotype. Other genetic and clinical factors may also influence warfarin dosage.",
+      "level": "1A",
+      "category": "Dosage"
+    },
+    {
+      "rsid": "rs59086055",
+      "gene": "DPYD",
+      "drugs": "fluorouracil",
+      "genotype": "GG",
+      "annotation": "The A allele of rs59086055 is assigned a no function allele by CPIC. Patients with GG genotype and cancer who are treated with fluorouracil and leucovorin may have a decreased, but not absent, risk of drug toxicity as compared to patients with the AG or AA genotype. Other genetic and clinical factors may also influence risk of drug toxicity.",
+      "level": "1A",
+      "category": "Other"
+    },
+    {
+      "rsid": "rs35516286",
+      "gene": "CFTR",
+      "drugs": "elexacaftor / tezacaftor / ivacaftor;ivacaftor",
+      "genotype": "TT",
+      "annotation": "Patients with the rs35516286 TT genotype (do not have a copy of the CFTR I148T variant) and cystic fibrosis have an unknown response to ivacaftor or elexacaftor / tezacaftor / ivacaftor treatment, as response may depend on the presence of other CFTR variants. Other genetic and clinical factors may also influence response to ivacaftor or elexacaftor / tezacaftor / ivacaftor.",
+      "level": "1A",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs1800076",
+      "gene": "CFTR",
+      "drugs": "elexacaftor / tezacaftor / ivacaftor;ivacaftor",
+      "genotype": "GG",
+      "annotation": "Patients with the rs1800076 GG genotype (do not have a copy of the CFTR R75Q variant) and cystic fibrosis have an unknown response to ivacaftor or elexacaftor / tezacaftor / ivacaftor treatment, as response may depend on the presence of other CFTR variants. Other genetic and clinical factors may also influence response to ivacaftor or elexacaftor / tezacaftor / ivacaftor.",
+      "level": "1A",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs80224560",
+      "gene": "CFTR",
+      "drugs": "elexacaftor / tezacaftor / ivacaftor;ivacaftor",
+      "genotype": "GG",
+      "annotation": "Patients with the rs80224560 GG genotype (do not have a copy of the CFTR 2789+5G>A variant) and cystic fibrosis have an unknown response to ivacaftor or elexacaftor / tezacaftor / ivacaftor treatment, as response may depend on the presence of other CFTR variants. Other genetic and clinical factors may also influence response to ivacaftor or elexacaftor / tezacaftor / ivacaftor.",
+      "level": "1A",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs36210737",
+      "gene": "CFTR",
+      "drugs": "elexacaftor / tezacaftor / ivacaftor",
+      "genotype": "TT",
+      "annotation": "Patients with the rs36210737 TT genotype (do not have a copy of the CFTR M1101K variant) and cystic fibrosis have an unknown response to elexacaftor / tezacaftor / ivacaftor treatment, as response may depend on the presence of other CFTR variants. Other genetic and clinical factors may also influence response to elexacaftor / tezacaftor / ivacaftor.",
+      "level": "1A",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs1801159",
+      "gene": "DPYD",
+      "drugs": "capecitabine",
+      "genotype": "TT",
+      "annotation": "Both variants of rs1801159 are assigned normal function by CPIC. Patients with the TT genotype and cancer who are treated with fluorouracil, a fluoropyrimidine-based chemotherapy, may not have altered risk of drug toxicity as compared to patients with the CT or CC genotype. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence risk of drug toxicity.",
+      "level": "1A",
+      "category": "Toxicity"
+    },
+    {
+      "rsid": "rs67376798",
+      "gene": "DPYD",
+      "drugs": "fluorouracil",
+      "genotype": "TT",
+      "annotation": "Patients with the rs67376798 TT genotype and cancer who are treated with tegafur, a fluoropyrimidine, may have a decreased, but not absent, risk of drug toxicity as compared to patients with the AT or AA genotype. This drug-variant pair has been assigned a \u201cno recommendation\u201d by CPIC, as it was determined to be not clinically actionable. Other genetic and clinical factors may also influence response to fluoropyrimidine-based chemotherapy.",
+      "level": "1A",
+      "category": "Toxicity"
+    },
+    {
+      "rsid": "rs3918290",
+      "gene": "DPYD",
+      "drugs": "capecitabine",
+      "genotype": "CC",
+      "annotation": "Patients with the rs3918290 CC genotype and cancer who are treated with tegafur, a fluoropyrimidine, may have a decreased, but not absent, risk of drug toxicity as compared to patients with the CT or TT genotype. This drug-variant pair has been assigned a \u201cno recommendation\u201d by CPIC, as it was determined to be not clinically actionable. Other genetic and clinical factors may also influence response to fluoropyrimidine-based chemotherapy.",
+      "level": "1A",
+      "category": "Toxicity"
+    },
+    {
+      "rsid": "rs55886062",
+      "gene": "DPYD",
+      "drugs": "fluorouracil",
+      "genotype": "AA",
+      "annotation": "The C allele of this variant is assigned a no function allele by CPIC. Patients with the AA genotype and cancer who are treated with fluorouracil, a fluoropyrimidine-based chemotherapy, may have decreased, but not absent, risk of drug toxicity as compared to patients with the AC or CC genotype. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence risk of drug toxicity.",
+      "level": "1A",
+      "category": "Other"
+    },
+    {
+      "rsid": "rs121909005",
+      "gene": "CFTR",
+      "drugs": "ivacaftor",
+      "genotype": "TT",
+      "annotation": "Patients with the rs121909005 TT genotype (do not have a copy of the CFTR S549R variant) and cystic fibrosis have an unknown response to ivacaftor treatment, as response may depend on the presence of other CFTR variants. Other genetic and clinical factors may also influence response to ivacaftor.",
+      "level": "1A",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs28933396",
+      "gene": "RYR1",
+      "drugs": "desflurane;enflurane;halothane;isoflurane;methoxyflurane;sevoflurane;succinylcholine",
+      "genotype": "GG",
+      "annotation": "Patients with the rs28933396 GG genotype may have a decreased, but not absent, risk for malignant hyperthermia based on this variant when treated with volatile anesthetics (desflurane, enflurane, halothane, isoflurane, methoxyflurane, sevoflurane) and/or succinylcholine as compared to patients with the AG and AA genotype. Other genetic or clinical factors may also influence the risk for malignant hyperthermia.",
+      "level": "1A",
+      "category": "Toxicity"
+    },
+    {
+      "rsid": "rs56005131",
+      "gene": "DPYD",
+      "drugs": "fluorouracil",
+      "genotype": "GG",
+      "annotation": "Both variants of rs56005131 are assigned normal function by CPIC. Patients with the GG genotype and cancer who are treated with capecitabine, a fluoropyrimidine-based chemotherapy, may not have altered risk of drug toxicity as compared to patients with the GT or TT genotype. However, conflicting evidence has been reported. Other genetic and clinical factors may also influence risk of drug toxicity.",
+      "level": "1A",
+      "category": "Other"
+    },
+    {
+      "rsid": "rs78655421",
+      "gene": "CFTR",
+      "drugs": "ivacaftor",
+      "genotype": "GG",
+      "annotation": "Patients with the rs78655421 GG genotype (do not carry a copy of the CFTR R117H variant) have an unknown response to ivacaftor treatment, as response may depend on the presence of other CFTR variants. Other genetic and clinical factors may also influence response to ivacaftor.",
+      "level": "1A",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs1801266",
+      "gene": "DPYD",
+      "drugs": "fluorouracil",
+      "genotype": "GG",
+      "annotation": "The A allele of rs1801266 is assigned no function by CPIC. Patients with the GG genotype may have increased DPYD activity as compared to those with the AA or AG genotype. Other genetic and clinical factors may also influence catalytic activity of DPYD.",
+      "level": "1A",
+      "category": "Other"
+    },
+    {
+      "rsid": "rs1801268",
+      "gene": "DPYD",
+      "drugs": "fluorouracil",
+      "genotype": "CC",
+      "annotation": "The A allele of rs1801268 is assigned no function by CPIC. Patients with the CC genotype may have increased DPYD activity as compared to those with the AC or AA genotype. Other genetic and clinical factors may also influence catalytic activity of DPYD.",
+      "level": "1A",
+      "category": "Other"
+    },
+    {
+      "rsid": "rs77409459",
+      "gene": "CFTR",
+      "drugs": "ivacaftor",
+      "genotype": "CC",
+      "annotation": "Patients with the rs77409459 CC genotype (do not have a copy of the CFTR T338I variant) and cystic fibrosis have an unknown response to ivacaftor treatment, as response may depend on the presence of other CFTR variants. Other genetic and clinical factors may also influence response to ivacaftor.",
+      "level": "1A",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs1800100",
+      "gene": "CFTR",
+      "drugs": "ivacaftor",
+      "genotype": "CC",
+      "annotation": "Patients with the rs1800100 CC genotype (do not have a copy of the CFTR R668C variant) and cystic fibrosis have an unknown response to ivacaftor treatment, as response may depend on the presence of other CFTR variants. Other genetic and clinical factors may also influence response to ivacaftor.",
+      "level": "1A",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs11971167",
+      "gene": "CFTR",
+      "drugs": "ivacaftor",
+      "genotype": "GG",
+      "annotation": "Patients with the rs11971167 GG genotype (do not have a copy of the CFTR D1270N variant) and cystic fibrosis have an unknown response to ivacaftor treatment, as response may depend on the presence of other CFTR variants. Other genetic and clinical factors may also influence response to ivacaftor.",
+      "level": "1A",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs8050894",
+      "gene": "VKORC1",
+      "drugs": "warfarin",
+      "genotype": "CC",
+      "annotation": "Patients with the rs8050894 CC genotype may require a higher dose of warfarin as compared to patients with the CG or GG genotype. Other genetic and clinical factors may also influence warfarin dosage requirements.",
+      "level": "1B",
+      "category": "Dosage"
+    },
+    {
+      "rsid": "rs8099917",
+      "gene": "IFNL3",
+      "drugs": "interferons;peginterferon alfa-2a;peginterferon alfa-2b;ribavirin",
+      "genotype": "GT",
+      "annotation": "Patients with genotype GT may have decreased sustained virological response (SVR) to ledipasvir and sofosbuvir in people with Hepatitis C genotype 1 as compared to patients with genotypes TT. Other genetic and clinical factors may also influence the response to ledipasvir and sofosbuvir.",
+      "level": "1B",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs2359612",
+      "gene": "VKORC1",
+      "drugs": "warfarin",
+      "genotype": "GG",
+      "annotation": "Patients with the rs2359612 GG genotype may require an increased dose of warfarin as compared to patients with the AG or AA genotype. Other genetic and clinical factors may also influence dose of warfarin.",
+      "level": "1B",
+      "category": "Dosage"
+    },
+    {
+      "rsid": "rs1042713",
+      "gene": "ADRB2",
+      "drugs": "salmeterol",
+      "genotype": "AA",
+      "annotation": "Patients with the rs1042713 AA genotype may have a decreased response to salbutamol, in terms of energy expenditure, as compared to patients with the AG or GG genotypes. Other genetic and clinical factors may also influence response to salbutamol.",
+      "level": "2A",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs1801133",
+      "gene": "MTHFR",
+      "drugs": "methotrexate",
+      "genotype": "AA",
+      "annotation": "Patients with the AA genotype and leukemia who undergo hematopoietic cell transplant and are treated with methotrexate may have a decreased risk of Graft vs Host disease as compared to patients with the GG genotype. Other genetic and clinical factors may also influence a patient's risk Graft vs Host disease and efficacy of methotrexate treatment. This drug-variant pair has been assigned a \u201cno recommendation\u201d by DPWG, as it was determined to be not clinically actionable.",
+      "level": "2A",
+      "category": "Toxicity"
+    },
+    {
+      "rsid": "rs2231142",
+      "gene": "ABCG2",
+      "drugs": "rosuvastatin",
+      "genotype": "GG",
+      "annotation": "Patients with the rs2231142 GG genotype and gout may have increased response when treated with allopurinol as compared to patients with the GT or TT genotype. Other genetic and clinical factors may also influence allopurinol response.",
+      "level": "2A",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs2884737",
+      "gene": "VKORC1",
+      "drugs": "warfarin",
+      "genotype": "AA",
+      "annotation": "Patients with the rs2884737 AA genotype may require higher dose of warfarin as compared to patients with the CC genotype. Other clinical and genetic factors may also influence warfarin dosage requirements.",
+      "level": "2A",
+      "category": "Dosage"
+    },
+    {
+      "rsid": "rs4646437",
+      "gene": "CYP3A4",
+      "drugs": "tacrolimus",
+      "genotype": "GG",
+      "annotation": "Patients with the GG genotype who are heroin dependent may have less severe side effects when treated with methadone as compared to patients with the AA genotype. Other genetic and clinical factors may also influence side effects in patients receiving methadone.",
+      "level": "2A",
+      "category": "Metabolism/PK"
+    },
+    {
+      "rsid": "rs11881222",
+      "gene": "IFNL3",
+      "drugs": "peginterferon alfa-2a;peginterferon alfa-2b;ribavirin",
+      "genotype": "AG",
+      "annotation": "Patients with the rs11881222 AG genotype and hepatitis C or HIV may have a poorer response to treatment with peginterferon-alpha and ribavirin as compared to patients with the AA genotype. Other genetic and clinical factors may also influence response to peginterferon-alpha and ribavirin treatment.",
+      "level": "2A",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs1800629",
+      "gene": "TNF",
+      "drugs": "etanercept",
+      "genotype": "AG",
+      "annotation": "Patients with migraine without aura and the rs1800629 AG genotype may have a decreased response to naproxen as compared to patients with the GG genotype. Other genetic and clinical factors may also influence response to naproxen.",
+      "level": "2B",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs25487",
+      "gene": "XRCC1",
+      "drugs": "Platinum compounds",
+      "genotype": "CT",
+      "annotation": "Patients with the CT genotype and breast cancer may have an increased risk for nausea when treated with cyclophosphamide, doxorubicin and fluorouracil (FAC) as compared to patients with the CC genotype. Other genetic and clinical factors may also influence risk for nausea in patients taking FAC chemotherapy.",
+      "level": "2B",
+      "category": "Efficacy"
+    },
+    {
+      "rsid": "rs671",
+      "gene": "ALDH2",
+      "drugs": "ethanol",
+      "genotype": "GG",
+      "annotation": "Patients with the rs671 GG genotype may have decreased blood alcohol concentrations (BAC) as compared to patients with the AG genotype. This annotation only covers the pharmacokinetic relationship between rs671 and ethanol and does not include evidence about clinical outcomes. Other genetic and clinical factors may also affect BAC.",
+      "level": "2B",
+      "category": "Toxicity"
+    },
+    {
+      "rsid": "rs6025",
+      "gene": "F5",
+      "drugs": "hormonal contraceptives for systemic use",
+      "genotype": "CC",
+      "annotation": "Patients with the rs6025 CC genotype (normal Factor V) may have a decreased risk of experiencing thrombosis when receiving oral contraceptives as compared to patients with the CT or TT genotype (carriers of Factor V Leiden). However, conflicting evidence has been reported. Both Factor V Leiden and oral contraceptives have been found to independently increase the risk for thrombosis, but together they may have a cumulative effect on thrombosis risk. Other genetic and clinical factors may also influence risk of thrombosis.",
+      "level": "2B",
+      "category": "Toxicity"
+    },
+    {
+      "rsid": "rs7853758",
+      "gene": "SLC28A3",
+      "drugs": "anthracyclines and related substances;daunorubicin;doxorubicin",
+      "genotype": "GG",
+      "annotation": "Pediatric patients with the rs7853758 GG genotype and Neoplasms may have increased likelihood of cardiotoxicity when treated with anthracyclines as compared to pediatric patients with the AA or AG genotype. Other genetic and clinical factors may also influence development of cardiotoxicity.",
+      "level": "2B",
+      "category": "Toxicity"
+    }
+  ],
+  "summary": {
+    "total_snps": 957678,
+    "analyzed_snps": 65,
+    "high_impact": 7,
+    "moderate_impact": 10,
+    "low_impact": 18
+  }
+}
